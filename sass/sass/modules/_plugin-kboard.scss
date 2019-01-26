@@ -1,0 +1,10 @@
+// pagination button
+#kboard-default-list .kboard-pagination .kboard-pagination-pages li:hover a, #kboard-default-list .kboard-pagination .kboard-pagination-pages li.active a {
+  color: white;
+  background-color: #7b1385 !important; // default #00a8e7
+}
+
+// small buttons
+#kboard-default-list a.kboard-default-button-small, #kboard-default-list input.kboard-default-button-small, #kboard-default-list button.kboard-default-button-small {
+  background: #7b1385 !important;
+}

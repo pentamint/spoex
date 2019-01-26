@@ -1,0 +1,102 @@
+/* ----- 사무국소개 / About us ----- */
+.top_box {
+	position: relative;
+	padding: 20px;
+  margin: 80px 0 20px;
+	border: 5px solid #7c2686;
+	-moz-border-image: -moz-linear-gradient(top,#f37b22 0, #4da6ad 20%, #2083d5 40%,#a01c84 60% #ea1b3a 80%, #4ea246 100%);
+	-webkit-border-image: -webkit-linear-gradient(top,#f37b22 0,#4da6ad 20%,#2083d5 40%,#a01c84 60%, #ea1b3a 80%, #4ea246 100%);
+	border-image: linear-gradient(to bottom,#f37b22 0, #4da6ad 20%,#2083d5 40%,#a01c84 60%, #ea1b3a 80%, #4ea246 100%);
+	border-image-slice: 1;
+}
+@include media-breakpoint-up(sm) {
+	padding: 40px;
+	margin: 80px 0 40px;
+}
+@include media-breakpoint-up(md) {
+	margin: 80px 0;
+	padding: 50px;
+}
+@include media-breakpoint-up(lg) {
+	padding: 60px;
+}
+@include media-breakpoint-up(xl) {
+	.top_box {
+		padding: 80px;
+		margin: 130px 0 80px;
+	}
+}
+.top_box .top_box_logo {
+	margin: -70px 0 20px;
+	text-align: center;
+}
+@include media-breakpoint-up(sm) {
+	.top_box .top_box_logo {
+		float: none;
+		margin: -100px 0 0;
+		width: auto;
+	}
+}
+@include media-breakpoint-up(md) {
+	.top_box .top_box_logo {
+		position: static;
+		float: right;
+		margin-top: -155px;
+		margin-right: 0;
+	}
+}
+@include media-breakpoint-up(xl) {
+	.top_box_logo {
+		position: absolute;
+	  top: -180px;
+	  right: -85px;
+	}
+}
+.top_box .top_box_logo img {
+  width: 100px;
+}
+@include media-breakpoint-up(sm) {
+	.top_box .top_box_logo img {
+	  width: 130px;
+	}
+}
+@include media-breakpoint-up(md) {
+	.top_box .top_box_logo img {
+	  width: 260px;
+	}
+}
+
+.top_box .info {
+	padding: 30px 0 0;
+	border-top: 1px solid #f3f3f3;
+}
+.top_box .info li {
+	padding: 2px 0;
+  padding-left: 35px;
+  margin: 5px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  color: #323232;
+  background-size: 26px;
+  background-position: 0 5px;
+  background-repeat: no-repeat;
+}
+.top_box .info li a {
+	font-size: 20px;
+	color: #323232;
+}
+.sub1_5 .top_box_txt h1 {
+	margin: 10px 0 20px;
+}
+.sub1_5 .top_box_txt .info {
+	padding: 20px 0 0;
+}
+.map {
+  background-image: url(/wp-content/uploads/2019/01/ico_map.png);
+}
+.tel {
+	background-image: url(/wp-content/uploads/2019/01/ico_tel.png);
+}
+.email {
+	background-image: url(/wp-content/uploads/2019/01/ico_email.png);
+}

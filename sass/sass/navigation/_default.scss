@@ -1,0 +1,11 @@
+@include media-breakpoint-up($breakpoint__mobile-nav) {
+	.navbar-toggle {
+		display: none !important; // hide hamburger on larger devices
+	}
+	.navbar-nav {
+		@include justify-content(space-between);
+	}
+	.navbar-nav .dropdown-menu.show {
+		position: absolute; // dropdown ignore width
+	}
+}

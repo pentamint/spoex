@@ -1,0 +1,44 @@
+@import "layout/footer/2cols-md3-md9";
+
+/* custom style */
+
+.footer-wrapper {
+  padding: 1.875rem 0;
+}
+#footer-sidebar {
+  @include font-size(0.8125);
+}
+// logo size
+#footer-sidebar1 img {
+  width: 7.5rem;
+}
+// social links
+.social-links {
+  @include font-size(1.5);
+}
+@include media-breakpoint-up(md) {
+  .social-links {
+    text-align: right;
+  }
+}
+.img-icon.naver-blog {
+  display: inline-block;
+}
+.img-icon.naver-blog img {
+  margin-top: -5px;
+  width: 100%;
+  max-width: 1.3125rem;
+}
+.colophon-wrapper {
+  padding: 0.9375rem 0;
+}
+.site-footer {
+  @include font-size(0.6875);
+  font-family: $font__eng;
+    .kfont {
+      font-family: $font__kor;
+    }
+}
+#author-credits {
+  display: none;
+}

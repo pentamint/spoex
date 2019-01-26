@@ -1,0 +1,96 @@
+/* ----- 지원사업안내 / support program ----- */
+.top_box {
+  padding: 80px;
+  position: relative;
+  margin: 20px 0 80px;
+  border: 5px solid #7c2686;
+  -moz-border-image: -moz-linear-gradient(top,#f37b22 0, #4da6ad 20%, #2083d5 40%,#a01c84 60% #ea1b3a 80%, #4ea246 100%);
+  -webkit-border-image: -webkit-linear-gradient(top,#f37b22 0,#4da6ad 20%,#2083d5 40%,#a01c84 60%, #ea1b3a 80%, #4ea246 100%);
+  border-image: linear-gradient(to bottom,#f37b22 0, #4da6ad 20%,#2083d5 40%,#a01c84 60%, #ea1b3a 80%, #4ea246 100%);
+  border-image-slice: 1;
+}
+.top_box.type2 {
+	background: url(/wp-content/uploads/2019/01/top_box_bg01.png) no-repeat 100% 0,url(/wp-content/uploads/2019/01/top_box_bg02.png) no-repeat 0 100%;
+	padding: 47px 60px;
+}
+.top_box.type2 .top_box_txt p {
+    white-space: normal;
+}
+.top_box_txt p.b_txt {
+    font-size: 30px;
+    color: #323232;
+    margin: 0 0 20px;
+}
+@include media-breakpoint-down(lg) { // 1199.98px and down
+  .top_box {
+    padding: 20px;
+    margin: 20px 0 20px;
+  }
+  .top_box_txt p, .sub2_3_re .top_box p {
+    font-size: 18px;
+  }
+  .top_box_txt p, .sub2_3_re .top_box p {
+    white-space: normal;
+    font-size: 18px;
+  }
+}
+@include media-breakpoint-down(md) { // 991.98px and down
+  .top_box {
+    padding: 40px;
+    margin: 0 0 40px;
+  }
+  .top_box.type2 {
+    padding: 50px;
+  }
+  .top_box_txt p.b_txt {
+    font-size: 22px;
+  }
+  .top_box_txt p, .sub2_3_re .top_box p {
+    font-size: 16px;
+  }
+}
+@include media-breakpoint-down(sm) { // 767.98px and down
+  .top_box {
+    margin: 0;
+    padding: 50px;
+  }
+  .top_box.type2 {
+    padding: 40px;
+  }
+  .top_box_txt p.b_txt {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  .top_box_txt p, .sub2_3_re .top_box p {
+    font-size: 13px;
+  }
+}
+@include media-breakpoint-down(xs) { // 575.98px and down
+  .top_box {
+    padding: 60px;
+  }
+  .top_box.type2 {
+    padding: 20px;
+  }
+  .top_box_txt p.b_txt {
+    font: 14px;
+  }
+  .top_box_txt p {
+    font-size: 12px;
+  }
+}
+
+
+
+@include media-breakpoint-up(sm) { // 576px and up
+
+}
+@include media-breakpoint-up(md) { // 768px and up
+
+}
+@include media-breakpoint-up(lg) { // 992px and up
+
+}
+@include media-breakpoint-up(xl) { // 1200px and up
+
+}

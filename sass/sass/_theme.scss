@@ -1,0 +1,134 @@
+// Headings and Paragraphs typography
+.entry-title {
+
+}
+.post_title {
+
+}
+.row_title {
+	@include font-size(1.75);
+	color: $color__text-title;
+	font-weight: 700;
+	margin-bottom: 3rem;
+}
+.row_subtitle {
+	@include font-size(1.5);
+	color: $color__text-subtitle;
+	font-weight: 700;
+	margin-bottom: 1.25rem;
+}
+.page-id-10 .row_subtitle::before, .parent-pageid-10 .row_subtitle::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(/wp-content/uploads/2019/01/KakaoTalk_20190114_215129664.png);
+  display: inline-block;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.page-id-23 .row_subtitle::before, .parent-pageid-23 .row_subtitle::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(/wp-content/uploads/2019/01/KakaoTalk_20190114_215129826.png);
+  display: inline-block;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.page-id-38 .row_subtitle::before, .parent-pageid-38 .row_subtitle::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(/wp-content/uploads/2019/01/KakaoTalk_20190114_2151296641.png);
+  display: inline-block;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.page-id-46 .row_subtitle::before, .parent-pageid-46 .row_subtitle::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(/wp-content/uploads/2019/01/KakaoTalk_20190114_215130171.png);
+  display: inline-block;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.page-id-49 .row_subtitle::before, .parent-pageid-49 .row_subtitle::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url(/wp-content/uploads/2019/01/KakaoTalk_20190114_215130029.png);
+  display: inline-block;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.row_copy {
+	@include font-size(1.5);
+	font-weight: 700;
+	margin-bottom: 1.25rem;
+}
+.row_p {
+
+}
+.row-p-light {
+	color: $color__text-sub;
+}
+
+// Page Layout
+.row_even {
+	background-color: #f9f9f9;
+}
+.row_even .wp-block-column { // enable child z-index lower than parent
+	z-index: 0;
+}
+.row2 {
+	background-color: #f9f9f9;
+}
+.row2 .wp-block-column { // enable child z-index lower than parent
+	z-index: 0;
+}
+// Page Elements
+// row separator
+hr {
+	background-color: transparent;
+	border-bottom: 2px solid transparent;
+	border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+	border-image-slice: 1;
+	height: 2px;
+	margin: 9px;
+	width: 100%;
+	z-index: -1; // enable inline separator
+}
+// bordered block outer & inner
+
+// gradient textblock
+.grd_textblock {
+	margin: 10px 0 25px;
+	@include font-size(.875);
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	background: #991c84;
+	background: -moz-linear-gradient(left, #a11c84 0%, #8e1d85 47%, #733293 100%);
+	background: -webkit-linear-gradient(left, #a11c84 0%, #8e1d85 47%,#733293 100%);
+	background: linear-gradient(to right, #a11c84 0%, #8e1d85 47%,#733293 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a11c84', endColorstr='#733293',GradientType=1 );
+}
+// post loops
+.grid-title { // post loop grid outer
+  display: table;
+  width: 100%;
+  height: 3.125rem;
+  background-color: #fff;
+}
+.grid-title a { // post loop grid inner
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 700;
+}

@@ -1,0 +1,18 @@
+// remove site meta
+.site-title, .site-description {
+  display: none;
+}
+// logo initial size
+.custom-logo-link {
+  width: 100%;
+}
+// remove top margin on home
+.home .entry-content {
+  margin: 0;
+}
+@include media-breakpoint-up($breakpoint__mobile-nav) {
+  // enclose child content
+  .site-header .container {
+    position: relative;
+  }
+}

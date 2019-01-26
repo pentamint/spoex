@@ -1,0 +1,23 @@
+/* ----- 전시회홍보 / Exhibit promotion ----- */
+
+.page_list {
+	list-style: disc;
+	margin-bottom: 2rem;
+	padding-left: 2rem;
+}
+
+@include media-breakpoint-up(sm) { // 576px+
+
+}
+@include media-breakpoint-up(md) { // 768px+
+
+}
+@include media-breakpoint-up(lg) { // 992px+
+
+}
+@include media-breakpoint-up(xl) { // 1200px+
+
+}
+@include media-breakpoint-down(xl) {
+
+}

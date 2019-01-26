@@ -1,0 +1,60 @@
+/* ----- page name ----- */
+
+.btns.abs_right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.btns.abs_right a {
+  display: inline-block;
+  width: 245px;
+  height: 80px;
+  padding: 25px 15px;
+  line-height: 1.2;
+  font-size: 13px;
+  font-weight: normal;
+}
+.btns.abs_right a span {
+  float: left;
+}
+.page-id-1134 .btns.first a {
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  font-size: 15px;
+}
+.page-id-1134 .btns.second a {
+  line-height: 18px;  
+}
+@include media-breakpoint-down(lg) { // 1199.98px and down
+
+}
+@include media-breakpoint-down(md) { // 991.98px and down
+  .btns.abs_right {
+    position: static;
+    text-align: center;
+    margin: 30px 0;
+  }
+}
+@include media-breakpoint-down(sm) { // 767.98px and down
+  .page-id-1134 .btns a {
+    line-height: 30px;
+  }
+}
+@include media-breakpoint-down(xs) { // 575.98px and down
+
+}
+
+
+
+@include media-breakpoint-down(lg) { // 575.98px and down
+
+}
+@include media-breakpoint-down(md) { // 767.98px and down
+
+}
+@include media-breakpoint-down(sm) { // 991.98px and down
+
+}
+@include media-breakpoint-down(xs) { // 1199.98px and down
+
+}

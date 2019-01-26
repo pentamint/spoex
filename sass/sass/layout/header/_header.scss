@@ -1,0 +1,57 @@
+@import "default";
+
+/*--------------------------------------------------------------
+## Header background: block / transparent
+--------------------------------------------------------------*/
+@import "transparent";
+
+/*--------------------------------------------------------------
+## Logo position: logo-center / logo-right
+--------------------------------------------------------------*/
+@import "logo-center";
+// @import "logo-right";
+
+/*--------------------------------------------------------------
+## Header on scroll: block / fixed
+--------------------------------------------------------------*/
+@import "fixed";
+
+/*--------------------------------------------------------------
+## Secondary navigation bar
+--------------------------------------------------------------*/
+// @import "secondary-bar";
+
+/* ----- Theme ----- */
+
+// fixed header design on scroll
+.site-header.sticky {
+  background-color: $color__background-header;
+}
+// page && post header design !home !on scroll
+body:not(.home) .site-header:not(.sticky) {
+	width: 100%;
+  height: 5.25rem;
+	background-color: $color__background-header;
+}
+@include media-breakpoint-up(lg) {
+  body:not(.home) .site-header:not(.sticky) {
+  	height: 8.125rem;
+  }
+}
+// logo spacing: top & bottom
+.site-branding {
+  padding: 0.625rem 0;
+}
+// logo size: responsive % / fixed unit
+.custom-logo-link {
+  max-width: 4rem;
+}
+.site-header.sticky .custom-logo-link {
+  max-width: 6rem;
+  padding: .5rem 0;
+}
+@include media-breakpoint-up($breakpoint__mobile-nav) {
+  .custom-logo-link {
+    max-width: 7rem;
+  }
+}
